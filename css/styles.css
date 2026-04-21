@@ -1,6 +1,6 @@
 /* =============================================================
    Gambit Bones Vending — Stylesheet
-   Colors: white palette + dark green accents
+   Colors: navy + yellow & orange accents
    Fonts: Poppins (headings) + Inter (body)
 ============================================================= */
 
@@ -9,21 +9,21 @@
 ------------------------- */
 :root {
   --white: #ffffff;
-  --off-white: #f4f8f5;
-  --green-900: #132d1f;
-  --green-800: #1a3c2b;
-  --green-700: #2d6a4f;
-  --green-600: #40916c;
-  --green-400: #74c69d;
-  --green-100: #d8f3dc;
-  --green-50: #edf7f0;
+  --off-white: #f5f5f3;
+  --green-900: #08152a;
+  --green-800: #0e2244;
+  --green-700: #f07a1c;
+  --green-600: #d96a0e;
+  --green-400: #fcc200;
+  --green-100: #fef0cc;
+  --green-50: #fff8e8;
 
-  --text-900: #111815;
+  --text-900: #111215;
   --text-700: #374151;
   --text-500: #6b7280;
   --text-300: #d1d5db;
   --border: #e5e7eb;
-  --border-green: #c3e6cb;
+  --border-green: #fde5a0;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.09);
@@ -135,7 +135,7 @@ em { font-style: normal; color: var(--green-600); }
   border-color: var(--green-800);
   color: var(--white);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(45, 106, 79, 0.35);
+  box-shadow: 0 6px 20px rgba(240, 122, 28, 0.35);
 }
 
 .btn-outline {
@@ -224,6 +224,12 @@ em { font-style: normal; color: var(--green-600); }
 
 .nav-header.scrolled .logo-accent { color: var(--green-600); }
 
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -264,7 +270,7 @@ em { font-style: normal; color: var(--green-600); }
 .nav-cta:hover {
   background: var(--green-800) !important;
   color: var(--white) !important;
-  box-shadow: 0 4px 14px rgba(45, 106, 79, 0.3);
+  box-shadow: 0 4px 14px rgba(240, 122, 28, 0.3);
 }
 
 /* Hamburger */
@@ -305,7 +311,7 @@ em { font-style: normal; color: var(--green-600); }
   position: relative;
   background-color: var(--green-800);
   background-image:
-    linear-gradient(to bottom, rgba(6, 20, 12, 0.80) 0%, rgba(19, 45, 31, 0.72) 60%, rgba(26, 60, 43, 0.85) 100%),
+    linear-gradient(to bottom, rgba(5, 12, 24, 0.80) 0%, rgba(14, 34, 68, 0.72) 60%, rgba(8, 21, 42, 0.85) 100%),
     url('../assets/download.webp');
   background-size: cover;
   background-position: center 20%;
@@ -319,7 +325,7 @@ em { font-style: normal; color: var(--green-600); }
   width: 700px;
   height: 700px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(116, 198, 157, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(252, 194, 0, 0.08) 0%, transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -338,9 +344,9 @@ em { font-style: normal; color: var(--green-600); }
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: rgba(116, 198, 157, 0.15);
+  background: rgba(252, 194, 0, 0.15);
   color: var(--green-400);
-  border: 1px solid rgba(116, 198, 157, 0.3);
+  border: 1px solid rgba(252, 194, 0, 0.3);
   font-family: 'Poppins', sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
@@ -826,7 +832,7 @@ em { font-style: normal; color: var(--green-600); }
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--green-600);
-  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.15);
+  box-shadow: 0 0 0 3px rgba(240, 122, 28, 0.15);
 }
 
 .form-group textarea {
@@ -879,6 +885,13 @@ em { font-style: normal; color: var(--green-600); }
   color: var(--white);
   display: inline-block;
   margin-bottom: 14px;
+}
+
+.footer-brand .footer-logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footer-brand p {
@@ -1021,7 +1034,7 @@ em { font-style: normal; color: var(--green-600); }
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(19, 45, 31, 0.98);
+    background: rgba(14, 34, 68, 0.98);
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: stretch;
