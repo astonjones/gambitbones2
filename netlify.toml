@@ -1,4 +1,4 @@
-# Netlify configuration for Gambit Bones Vending
+# Netlify configuration for Gambit Vending
 
 [build]
   publish = "."

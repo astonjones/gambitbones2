@@ -1,5 +1,5 @@
 /* =============================================================
-   Gambit Bones Vending — Stylesheet
+   Gambit Vending — Stylesheet
    Colors: navy + yellow & orange accents
    Fonts: Poppins (headings) + Inter (body)
 ============================================================= */
@@ -572,7 +572,7 @@ em { font-style: normal; color: var(--green-600); }
   -------------------------------------------------------
   ABOUT SECTION PHOTO:
   To use a real photo, replace .about-image-placeholder
-  with: <img src="images/about-machine.jpg" alt="Gambit Bones Vending Machine" />
+  with: <img src="images/about-machine.jpg" alt="Gambit Vending Machine" />
   and add this CSS: img { border-radius: var(--radius-lg); object-fit: cover; }
   -------------------------------------------------------
 */
